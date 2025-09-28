@@ -1,3 +1,5 @@
+# This is simple Treasure game - that i designed on Python :) Have fun 
+
 print(r'''
 *******************************************************************************
           |                   |                  |                     |
