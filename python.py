@@ -41,3 +41,52 @@ if first_1 == "L":
         print("Attached by T : Game Over")
 else:
     print("Fall into hole : Game Over")
+
+# Rock Paper Scissors Game 
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+list = [rock,paper,scissors]
+user_input = int(input("Choose 0 for Rock, 1 for paper and 2 for Scissor \n"))
+computer_choice = random.randint(0,2)
+if user_input > 2:
+    print("Bad Choice, cant choose more then 2 : You loose \n ")
+elif user_input == 0:
+    print(f"User Choice: {rock} \n ")
+elif user_input == 1:
+    print(f"User choice: {paper} \n ")
+elif user_input == 2:
+    print(f"User Choice:  {scissors} \n ")
+# Computer choose
+print(f"computer choice: {list[computer_choice]} \n ")
+# Comparision to check if computer wins or users
+if computer_choice > user_input:
+    print("Computer Wins \n ")
+elif user_input > computer_choice:
+    print("You Wins \n ")
+elif computer_choice == user_input:
+    print("DRAW : Play again \n ")
